@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>La Cocinada</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/framework7.min.css" rel="stylesheet">
+<link href="css/framework7.md.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/material-icons.css" rel="stylesheet">
+
+	
+</head>
+
+<body class="color-theme-black">
+	<div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+		<section class="panel panel-left">
+			
+			<article class="text-align-center panel-logo">
+				<img src="img/logo_lacocinada-01.png" class="img-reponsive" width="120">
+			</article>
+			
+			<article>
+				<div class="list no-margin-top">
+					
+					<ul>
+					
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-media">
+									<i class="material-icons">info</i>
+								</div>
+								<div class="item-inner">
+								Infomación del Hotel
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-media">
+									<i class="material-icons">notifications</i>
+								</div>
+								<div class="item-inner">
+								Habitaciones
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-media">
+									<i class="material-icons">lens</i>
+								</div>
+								<div class="item-inner">
+								Restaurantes y Bares
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-media">
+									<i class="material-icons">local_offer</i>
+								</div>
+								<div class="item-inner">
+								Ofertas Especiales
+								</div>
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="#" class="item-link item-content">
+								<div class="item-media">
+									<i class="material-icons">developer_mode</i>
+								</div>
+								<div class="item-inner">
+								Acerca de la Aplicación
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</article>
+		</section>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main view-init">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+			
+			<!-- Top Navbar -->
+          <div class="navbar top-bar">
+            <div class="navbar-inner">
+				<div class="right">
+					<a href="#" class="link searchbar-enable" data-searchbar=".searchbar" data-panel="left"> <i class="icon material-icons">search</i></a>
+				</div>
+				
+	<form class="searchbar searchbar-expandable searchbar-init" data-search-container=".lista-comida" data-search-in=".item-inner">
+        <div class="searchbar-inner">
+          <div class="searchbar-input-wrap">
+            <input type="search" placeholder="Search"/>
+            <i class="searchbar-icon"></i>
+            <span class="input-clear-button"></span>
+          </div>
+          <span class="searchbar-disable-button">Cancel</span>
+        </div>
+      </form>
+				
+
+			  
+            </div>
+          </div>
+
+          <!-- Top Navbar -->
+       <!--   <div class="navbar">
+            <div class="navbar-inner">
+				
+              <div class="title">La Cocinada</div>
+				<div class="right">
+					<a href="#" class="link panel-open" data-panel="left"> <i class="icon material-icons">menu</i></a>
+				</div>
+            </div>
+          </div>-->
+			
+          <!-- Scrollable page content -->
+		<section id="sec-color" class="page-content lista-comida">
+          <div class="page-content">
+			  
+			<section id="title">
+			  		<h1 class="text-align-center">TRENDS</h1>
+			  </section>
+			  
+			  <section id="sec-imagenes">
+			  	<div class="block">
+				  	<div class="row">
+						<article class="col">
+							<a href="/hamburguesa/"><img src="img/app_images-02.png" class="img-reponsive" alt="img"></a>
+						</article>
+						
+						<article class="col">
+							<a href="/rollos/"><img src="img/app_images-04.png" class="img-reponsive" alt="img"></a>
+						</article>
+					</div>
+					
+					<div class="row">
+						<article class="col">
+							<a href="#"><img src="img/app_images-05.png" class="img-reponsive" alt="img"></a>
+						</article>
+						
+						<article class="col">
+							<a href="#"><img src="img/app_images-03.png" class="img-reponsive" alt="img"></a>
+						</article>
+					</div>
+					
+					<div class="row">
+						<article class="col">
+							<a href="/receta/"><img src="img/fondo2-06.png" class="img-reponsive" alt="img"></a>
+						</article>
+						
+						<article class="col">
+							<a href="#"><img src="img/fondo2-07.png" class="img-reponsive" alt="img"></a>
+						</article>
+					</div>
+				</div>
+			  </section>
+			  
+          </div>
+			
+			<div class="block searchbar-not-found">
+				  	<div class="block-inner">
+			  			Información no encontrada
+					</div>
+			  </div>
+			
+			</section>
+			
+			
+			  
+			
+        </div> <!--page-->
+		  	<div class="toolbar tabbar-labels toolbar-bottom-md">
+		  		
+				<div class="toolbar-inner">
+					
+					<a href="/perfil/" class="tab-link">
+						<i class="material-icons">account_circle</i>
+						<span class="tabbar-label">Perfil</span>
+					</a>
+					
+					<a href="/recetario/" class="tab-link">
+						<i class="material-icons">restaurant</i>
+						<span class="tabbar-label">Recetas</span>
+					</a>
+					
+					<a href="/home/" class="tab-link tab-link-active">
+						<i class="material-icons">home</i>
+						<span class="tabbar-label">Inicio</span>
+					</a>
+					
+					<a href="#" class="tab-link">
+						<i class="material-icons">camera_alt</i>
+						<span class="tabbar-label">Cámara</span>
+					</a>
+					
+				</div>
+				
+		  	</div>
+		  
+      </div> <!-- view -->
+		
+		
+		<section id="popup-login" class="popup modal-in">
+			<div class="page">
+				<div class="page-content login-screen-content">
+					<div class="block-title text-align-center">
+						<img src="img/logo_lacocinada-01.png" class="img-responsive" width="250" alt="logo">
+					</div>
+					
+					<form id="form-login">
+						<div class="list">
+							<ul>
+								<li class="item-content item-input">
+									<div class="item-media text-align-center">
+										<i class="material-icons">account_circle</i>
+									</div>
+									<div class="item-inner">
+										<!--<div class="item-title item-label">
+										Usuario
+										</div>-->
+										<div class="item-input-wrap usuario-color">
+											<input type="text" id="usuario" name="usuario" required validate placeholder="Usuario">
+										</div>
+									</div>
+								</li>
+								
+								<li class="item-content item-input">
+									<div class="item-media text-align-center">
+										<i class="material-icons">lock</i>
+									</div>
+									<div class="item-inner">
+										<!--<div class="item-title item-label">
+										Contraseña
+										</div>-->
+										<div class="item-input-wrap usuario-color">
+											<input type="password" id="password" name="password" required validate placeholder="Contraseña">
+										</div>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+						
+						<div class="block">
+							
+							<p><a href="#" id="btn-login" class="button button-fill button-round">Ingresar</a></p>
+							<p><a href="#" id="btn-registro" class="button button-fill button-border button-round popup-open" data-popup="#popup-registro">Registrarme</a></p>
+						
+						</div>
+						
+					</form>
+					
+				</div>
+			</div>
+		</section>
+		
+		<section id="popup-registro" class="popup login-screen-content">
+			<div class="page">
+				<div class="page-content">
+					<div class="block-titulo">
+						Registro
+					</div>
+					
+					<form id="form-registro">
+						
+						<div class="block-title">
+						Información Básica
+						</div>
+						
+						<div class="list">
+							<ul>
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<input type="text" id="nombre" name="nombre" required validate placeholder="Nombre">
+										</div>
+									</div>
+								</li>
+								
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<input type="text" id="password" name="password" required validate placeholder="Correo">
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						
+						<div class="block-title">
+						Información Privada
+						</div>
+						
+						<div class="list">
+							<ul>
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<input type="password" id="passwordreg" name="password" required validate placeholder="Contraseña">
+										</div>
+									</div>
+								</li>
+								
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<input type="tel" id="telefono" name="telefono" required validate placeholder="Teléfono">
+										</div>
+									</div>
+								</li>
+				
+							</ul>
+						</div>
+						
+						<div class="block">
+							<p><a href="#" class="button button-fill button-round">Registrarme</a></p>
+							<p class="text-align-center"><a href="#" class="link close-registro">Cancelar</a></p>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</section>
+		
+		
+    </div> <!--app-->
+	
+	
+	<script src="js/framework7.min.js"></script>
+	<script src="js/my-app.js"></script>
+	
+</body>
+</html>
